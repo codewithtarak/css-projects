@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<htm>
+    <head>
+        <title>
+            Change color using CSS animation
+        </title>
+        <style>
+            /*This is style for div*/
+                div{
+                    height:200px;
+                    width:200px;
+                    background-color:red;
+                    animation-name: myanimation; /*animation name*/
+                    animation-duration: 2s; /*animation duration*/
+
+                    /*this will define how many time you want to 
+                    repeat your animation
+                    
+                    infinite = it will keep showing animation in repeat
+                    you can also set no here
+                    */
+                    animation-iteration-count: infinite; 
+                }
+
+            /*Animation style*/
+            /*To define animation style we have to
+            use @keyframe rule
+            -> Style define under this rule will
+            execute after some interval
+            */
+            @keyframes myanimation{
+               /*Now lets modify our animation rules to make it more attractive*
+                
+                -> We can divide our animation time in percentage% and using this we can add
+                different stages to animation like below*/
+
+                0%{background-color:red;} /*initial stage*/
+                25%{background-color:yellow;} /*this color will apply when 25% of duration time is completed*/
+                50%{background-color:green;} /*this color will apply when 50% of duration time is completed*/
+                75%{background-color:blue;}/*this color will apply when 75% of duration time is completed*/
+                100%{background-color:pink;} /*Final stage*/
+            }
+
+        </style>
+    </head>
+    <body>
+        <h3>Change element color using CSS animation</h3>
+        <div></div>
+    </body>
+</htm>
