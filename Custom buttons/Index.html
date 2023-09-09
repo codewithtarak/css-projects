@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons with different styles using CSS only</title>
+    <style>
+        .btn{
+            color: black;
+            padding: 16px 32px;
+            background-color: transparent;
+            border: unset;
+            margin: 0px 5px;
+        }
+
+        .btn-primary{
+            color: white;
+            background-color: #2c82dc;
+        }
+
+        .btn-warning{
+            color:white;
+            background-color: orange;
+        }
+
+        .btn-info{
+            color:white;
+            background-color: #65caea;
+        }
+
+        .btn-danger{
+            color:white;
+            background-color: red;
+        }
+
+        .btn-default{
+            color:white;
+            background-color: #928f8f;
+        }
+
+        .btn-rounded{
+            border-radius: 50px;
+        }
+        
+        .btn-shadow{
+            box-shadow: 0px 5px 6px 1px grey;
+        }
+
+        /*hover effect for buttons*/
+        .btn-primary:hover{
+            background-color:#8dc1f9;
+        }
+
+        .btn-info:hover{
+            background-color: #a5cffd;
+        }
+
+        .btn-warning:hover{
+            background-color:#ffd17d;
+        }
+
+        .btn-danger:hover{
+            background-color: #f98989;
+        }
+
+        .btn-default:hover{
+            background-color: #bdbdbd;
+        }
+    </style>
+</head>
+<body>
+    <h3>Simple buttons</h3>
+    <button class="btn btn-primary">Primary</button>
+    <button class="btn btn-warning">Warning</button>
+    <button class="btn btn-info">Info</button>
+    <button class="btn btn-danger">Danger</button>
+    <button class="btn btn-default">Default</button><br>
+
+    <h3>Buttons with rounded corners</h3>
+    <button class="btn btn-primary btn-rounded">Primary</button>
+    <button class="btn btn-warning btn-rounded">Warning</button>
+    <button class="btn btn-info btn-rounded">Info</button>
+    <button class="btn btn-danger btn-rounded">Danger</button>
+    <button class="btn btn-default btn-rounded">Default</button><br>
+
+    <h3>Buttons with rounded corners and shadows</h3>
+    <button class="btn btn-primary btn-rounded btn-shadow">Primary</button>
+    <button class="btn btn-warning btn-rounded btn-shadow">Warning</button>
+    <button class="btn btn-info btn-rounded btn-shadow">Info</button>
+    <button class="btn btn-danger btn-rounded btn-shadow">Danger</button>
+    <button class="btn btn-default btn-rounded btn-shadow">Default</button><br>
+
+    <h3>Simple buttons with shadows</h3>
+    <button class="btn btn-primary btn-shadow">Primary</button>
+    <button class="btn btn-warning btn-shadow">Warning</button>
+    <button class="btn btn-info btn-shadow">Info</button>
+    <button class="btn btn-danger btn-shadow">Danger</button>
+    <button class="btn btn-default btn-shadow">Default</button><br>
+</body>
+</html>
